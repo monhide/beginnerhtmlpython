@@ -1,0 +1,56 @@
+{% extends 'pageLayout.html' %}
+
+{% block childsHead %}
+{% endblock childsHead %}
+
+{% block childsPageTitle %}
+	Books
+{% endblock childsPageTitle %}
+
+{% block childsMeta %}
+{% endblock childsMeta %}
+
+{% block childsContentTitle %}
+	Books
+{% endblock childsContentTitle %}
+
+{% block childPageContent %}
+	<p> 
+		The books in our database are:
+	</p>
+	<table>
+		<tr>
+			<th>
+				ID
+			</th>
+			<th> 
+				Title
+			</th>
+			<th>
+				Author
+			</th>
+			<th>
+				Pages
+			</th>
+		</tr>
+		{% for book in booksQS %}
+			<tr>
+				<td>
+					{{book.id}}
+				</td>
+				<td>
+					{{book.title}}
+				</td>
+				<td>
+					{{book.author}}
+				</td>
+				<td>
+					{{book.pages}}
+				</td>
+			</tr>
+		{% endfor %}
+	</table>
+{% endblock childPageContent %}
+
+{% block childsJavascript %}
+{% endblock childsJavascript %}

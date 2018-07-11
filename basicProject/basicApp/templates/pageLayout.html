@@ -1,0 +1,67 @@
+{% load static %}
+<html>
+	<head>
+		{% block parentsHead %}
+
+			{% block childsHead %}
+			{% endblock childsHead %}
+
+			{% block parentsMeta %}
+				<title> 
+					Monica's Website | {% block childsPageTitle %}{% endblock childsPageTitle %}
+				</title>
+				
+				{% block childsMeta %}
+				{% endblock childsMeta %}
+
+			{% endblock parentsMeta %}
+
+		{% endblock parentsHead %}
+	</head>
+
+	<body>
+		{% block parentsBody %}
+			<div class="main_container">
+				{% block parentsTopNavigation %}
+					{% include "pageNavigation/top_navigation.html" %}
+				{% endblock parentsTopNavigation%}
+				<div class="container_sidebar_and_content">
+				 	{% block parentsSidebar %}
+						{% include "pageNavigation/sidebar.html" %}
+					{% endblock parentsSidebar %}
+					
+					<div class="content" style="height:80%;">
+						<div class="content_title">
+							<h2>
+								{% block childsContentTitle %}
+								{% endblock childsContentTitle %}
+							</h2>
+						</div>
+						
+						<div class="content_actual" style="float:left; width:88%; margin: 20px;">
+							{% block childPageContent %}
+							{% endblock childPageContent %}
+						</div>
+
+					</div>
+				</div>
+
+				{% block parentsFooter %}
+					{% include "pageNavigation/footer.html" %}
+				{% endblock parentsFooter %}
+
+			</div>
+			
+			
+
+			{% block parentsJavascript %}
+				<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+				{% block childsJavascript %}
+				{% endblock childsJavascript %}
+
+			{% endblock parentsJavascript %}
+			
+		{% endblock parentsBody %}
+	</body>
+</html>
