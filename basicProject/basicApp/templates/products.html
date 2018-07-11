@@ -4,19 +4,19 @@
 {% endblock childsHead %}
 
 {% block childsPageTitle %}
-	Books
+	Products
 {% endblock childsPageTitle %}
 
 {% block childsMeta %}
 {% endblock childsMeta %}
 
 {% block childsContentTitle %}
-	Books
+	Products
 {% endblock childsContentTitle %}
 
 {% block childPageContent %}
-	<p> 
-		The books in our database are:
+	<p style="    color: blue;"> 
+		The products in our database are:
 	</p>
 	<table>
 		<tr>
@@ -24,31 +24,31 @@
 				ID
 			</th>
 			<th> 
-				Title
+				Name
 			</th>
 			<th>
-				Author
+				Description
 			</th>
 			<th>
-				Pages
+				Cost
 			</th>
 		</tr>
-		{% for book in booksQS %}
+		{% for product in productsQS %}
 			<tr>
 				<td>
-					{{book.id}}
+					{{product.id}}
 				</td>
 				<td>
-					{{book.title}}
+					{{product.name}}
 				</td>
 				<td>
-					{{book.author}}
+					{{product.description}}
 				</td>
 				<td>
-					{% if book.pages >= 200 %}
-						{{book.pages}} flowers!!
+					{% if product.cost >= 200.00 %}
+						{{product.cost}} flowers!!
 					{% else %}
-						{{book.pages}}
+						{{product.cost}}
 					{% endif %}					
 				</td>
 			</tr>

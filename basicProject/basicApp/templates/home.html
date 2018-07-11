@@ -18,6 +18,149 @@
 	<p> 
 		This is the homepage!
 	</p>
+
+	  <h1 id="para1"> Paragraph 1</h1>
+        
+        <p> <strong> First paragraph </strong> </p>
+        <p> <em> Second paragraph </em> </p>
+        <p> <big> Third paragraph is big,</big> <br> <small> and contains a break. Why am i also small? </small> </p>
+        <p> This <strike> Word </strike> has been striked out.</p>
+        
+     <!-- How to make symbols using sub and sup--> 
+        <h3> Chemical symbols</h3>
+        
+        <p> Co<sub>2</sub></p>
+        <p> X<sup>4</sup></p>
+        
+    <!-- How to create links (use the tag a and the href) -->
+        
+<!--        If you use cmd / it turns your writing into comments -->
+        
+        <p> This <a href="http://www.wikipedia.org" title="wikipedia"> Link </a> will take you to the wiki homepage. </p>
+        
+    <!-- How to add images (img tag) -->
+        
+        <img src="Images/IMG_4842.jpg" width=200px height=150px alt="bath curtain">
+        <p> This is my bath curtain</p>
+        
+        <img src="http://freenaturestock.s3.amazonaws.com/1279.jpg" height=120px width="200px" alt="nights sky">
+        <p> This is a stock image taken off the internet. </p>
+        
+    <!-- How to add in links again -->
+        
+    <h1 id="para2"> Paragraph 2</h1>
+        
+        <p> This <a href="htmlcoding.html" title="first coding page"> Link</a> will take you to my actual first ever page of coding. Taught by another dude. </p>
+        
+        <p> But don't worry about clicking on it because i've added an Iframe of it below </p>
+        
+    <!-- How to create Iframes (html files which are embedded within a html file - this is advertisement and youtube videos) -->
+        
+        <iframe src="htmlcoding.html" width="200px" height="200 px" frameborder="1"> </iframe>
+        <br /> 
+        <br />
+        <p> And Just in case you wanted to look something up at the same time on wikipedia, here's another Iframe for you. </p>
+        
+    
+        <iframe name="myiframe"> </iframe>
+        
+        <p> Just click on the link below to launch</p>
+        
+       <p> <a href="http://www.wikipedia.com" target="myiframe"> Wiki Link</a> </p>
+        
+        
+    <!-- How to embed youtube videos (youtube mainly does all this for you) --> 
+        
+    <h1> Disney Autonomous robot stunt figure</h1>
+        
+        <p> <big> WOW Oh boy isn't this super cool??? </big> </p>
+        
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ENa98h7M7qY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        
+        <!-- A short bit on creating tables -->
+    
+    <h1> <big> Table Headings </big></h1>
+        
+        <p> This is how to create a table (look at the coding below for more details. </p>
+        
+    <h2> How to Create Unordered lists:</h2>
+       <ul> 
+        <li> Like</li>
+        <li> This
+           <ul> 
+            <li>You </li>
+               <li> can even</li>
+               <li> create sublists</li>
+             </ul> </li>
+        </ul>
+        
+    <h2> But What about ordered lists? </h2>
+        <ol> 
+        <li> Don't worry you can do that too, just write </li>
+            <li> li instead of: </li>
+            <ol type="i"> 
+            <li> <b> ul  </b> </li>
+            <li> To get different numerals / types; Just type in type= and then it shows you the different options. </li></ol>
+        </ol>
+        
+        <!-- This little section is on Description lists, to create a heading for a description list use the tag dt, to add a point underneath then just use dd --> 
+        
+    <h2> Description lists </h2>
+        <dt> HTML </dt>
+            <dd> - Stands for Hypertext markup language</dd>
+            <dd> - But it's just called HTML for short</dd>
+        <dd> <small> Because that's much much easier to rememeber </small> </dd> 
+        
+        <br />
+        
+        <dt> CSS </dt> 
+            <dd> - Stands for Cascading Style Sheets </dd>
+        
+        <a href="#para1"> Back to paragraph 1</a> <br>
+        <a href="#para2"> Back to paragraph 2</a>
+    
+    <h1> Now it's time to learn about Tables</h1>
+    <p> <small>Which look like this: </small> </p>
+    <table> 
+    <tr> <th> Name </th> <th> Company </th> <th> Date of birth </th> </tr>
+        <tr> <td> Mark Zuckerberg </td> <td> Facebook </td> <td> 1984 </td> </tr>
+        <tr> <td> Monica Hide </td> <td>Doesnt own one </td> <td> 1997 </td> </tr>
+        
+        <br /> 
+        
+        </table>
+        <br /> 
+        
+        
+ <!-- Another example of using Description lists. -->       
+
+        <dt> <Big> So as you can see from the coding panel: </Big> </dt>
+        <dd> - <b>TH </b> ; stands for table heading </dd>
+        <dd> -<b> TR </b> ; stands for table row </dd>
+        <dd> - <b> TD </b> ; stands for table data </dd>
+    
+        
+<!-- Now we're going to learn about entities and how to use symbols inside coding, and also how to add space -->
+        
+        <h3> Entities </h3>
+        <p> So when you decide to write something with HTML you find that even if you push the space bar multiple times within the code, you don't see these space breaks on the internet page. To see breaks like &nbsp; &nbsp; this! You have to use the & sign, followed by nbsp &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; and then a semi colon ;.</p>
+        
+        <p> or you can do it like &#160; &#160;&#160;&#160;&#160;&#160; this. </p>
+        
+    <p> <a href="tps://www.w3schools.com/html/html_entities.asp" title="W3schools"> Click here to find all the character entity reference codes </a> so you can make symbols like this; &euro; &copy; </p>
+        
+    <!-- Forms -->
+        
+    <h1> Forms </h1>
+        <form method="get"> 
+            
+            <label for="email"> Email: </label>
+        <input type="text" name="email" placeholder="email" size="30px" maxlength="100" id="email">
+            <label for="password"> Password: </label>
+        <input type="password" name="password" placeholder="password" size="30px" maxlength="30" id="password">
+        <input type="submit" value="Login">
+
+    </form>
 {% endblock childPageContent %}
 
 {% block childsJavascript %}
